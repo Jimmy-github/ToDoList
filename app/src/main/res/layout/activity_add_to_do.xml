@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jimmy.todolist.activity.AddToDoActivity">
+
+    <include layout="@layout/layout_appbar" />
+
+    <EditText
+        android:id="@+id/et_todo_name"
+        style="@style/Bar.White"
+        android:layout_marginTop="@dimen/activity_verticval_margin"
+        android:hint="任务名称" />
+
+    <RelativeLayout
+        style="@style/Bar.White"
+        android:layout_marginTop="@dimen/activity_verticval_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:text="开启提醒" />
+
+        <CheckBox
+            android:id="@+id/cb_need_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_time_picker"
+        style="@style/Bar.White.Selectable"
+        android:layout_marginTop="@dimen/verticval_devider">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:text="提醒时间" />
+
+
+        <ImageView
+            android:id="@+id/iv_go"
+            style="@style/Icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/righticon" />
+
+        <TextView
+            android:id="@+id/tv_picked_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/iv_go"
+             />
+    </RelativeLayout>
+
+
+</LinearLayout>

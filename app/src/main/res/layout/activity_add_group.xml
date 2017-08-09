@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+
+    android:orientation="vertical"
+    tools:context="com.jimmy.todolist.activity.AddGroupActivity">
+
+    <include layout="@layout/layout_appbar" />
+
+    <EditText
+
+        android:id="@+id/et_group_name"
+        style="@style/Bar.White"
+        android:layout_marginTop="@dimen/activity_verticval_margin"
+        android:hint="分组名称"
+        android:paddingLeft="@dimen/horizontal_padding" />
+
+    <RelativeLayout
+        android:id="@+id/rl_icon_choose"
+        style="@style/Bar.White.Selectable"
+        android:layout_marginTop="@dimen/activity_verticval_margin"
+
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="icon" />
+
+        <ImageView
+            android:id="@+id/iv_go"
+            style="@style/Icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/righticon" />
+
+        <ImageView
+            android:id="@+id/iv_chosen_icon"
+            style="@style/Icon"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/iv_go" />
+    </RelativeLayout>
+
+</LinearLayout>

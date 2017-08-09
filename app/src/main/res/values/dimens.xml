@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bar_height">48dp</dimen>
+    <dimen name="activity_verticval_margin">16dp</dimen>
+
+    <dimen name="verticval_devider">1dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="horizontal_padding">16dp</dimen>
+    <dimen name="icon_size">16dp</dimen>
+</resources>

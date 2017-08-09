@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jimmy.todolist.activity.MainActivity">
+    tools:context="com.jimmy.todolist.activity.ToDoListActivity">
+    <include layout="@layout/layout_appbar"
+       />
 
-    <include layout="@layout/layout_appbar" />
 
     <ListView
-        android:id="@+id/lv_groups"
+
+        android:id="@+id/lv_todos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+       >
 
     </ListView>
-
 </LinearLayout>

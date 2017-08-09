@@ -1,11 +1,36 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorLightGray</item>
     </style>
 
+    <style name="Bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bar_height</item>
+
+        <item name="android:paddingLeft">@dimen/horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/horizontal_padding</item>
+
+
+    </style>
+
+    <style name="Bar.White">
+        <item name="android:background">@color/colorWhite</item>
+
+    </style>
+
+    <style name="Bar.White.Selectable">
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+<style name="Icon">
+
+    <item name="android:layout_width">@dimen/icon_size</item>
+    <item name="android:layout_height">@dimen/icon_size</item>
+</style>
 </resources>
